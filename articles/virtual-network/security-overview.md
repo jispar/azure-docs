@@ -73,7 +73,7 @@ Augmented security rules simplify security definition for virtual networks, allo
 * **AzureActiveDirectory** (Resource Manager only): This tag denotes the address prefixes of the AzureActiveDirectory service. If you specify *AzureActiveDirectory* for the value, traffic is allowed or denied to AzureActiveDirectory.  
 
 > [!NOTE]
-> Service tags of Azure services denotes the address prefixes from the specific cloud being used. Regional service tags are not supported on national clouds, only in global format. For example, *Storage* and *Sql*.
+> Service tags of Azure services denotes the address prefixes from the specific cloud being used.
 
 > [!NOTE]
 > If you implement a [virtual network service endpoint](virtual-network-service-endpoints-overview.md) for a service, such as Azure Storage or Azure SQL Database, Azure adds a [route](virtual-networks-udr-overview.md#optional-default-routes) to a virtual network subnet for the service. The address prefixes in the route are the same address prefixes, or CIDR ranges, as the corresponding service tag.
